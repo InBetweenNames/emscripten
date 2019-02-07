@@ -7933,9 +7933,9 @@ int main() {
 
       print('test on libc++: see effects of emulated function pointers')
       test(path_from_root('tests', 'hello_libcxx.cpp'), [
-        (['-O2'], 39, [], ['waka'], 348370,  27,  224, 728), # noqa
+        (['-O2'], 34, [], ['waka'], 348370,  22,  32, 565), # noqa
         (['-O2', '-s', 'EMULATED_FUNCTION_POINTERS=1'],
-                  39, [], ['waka'], 348249,  27,  224, 728), # noqa
+                  34, [], ['waka'], 348249,  22,  32, 565), # noqa
       ], size_slack) # noqa
 
   # ensures runtime exports work, even with metadce
